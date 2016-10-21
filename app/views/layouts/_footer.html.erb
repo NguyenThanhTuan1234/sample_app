@@ -1,13 +1,26 @@
-<header class="footer">
-
-  <div>
-    <%= link_to image_tag("Ruby_on_Rails_logo.png"), 'http://www.railstutorial.org' %>
-
-    <%= link_to "Ruby on Rails Tutorial", 'http://www.railstutorial.org', id: "link" %>
-    <ul id="footer-right">
-      <li><%= link_to "News", '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
-      <li><%= link_to "About", '#' %></li>
+<!-- <footer>
+  <div class = "row">
+    <ul>
+      <div class = "col-md-6"><%= link_to "Ruby on Rails Tutorial", 'http://www.railstutorial.org/' %></div>
+      <div class = "col-md-3 pull-right navbar-nav">
+        <li class = "nav col-md-3"><%= link_to "About", '#'  %></li>
+        <li class = "nav col-md-3"><%= link_to "Contact", '#'  %></li>
+        <li class = "nav col-md-3"><%= link_to "News", '#'  %></li>
+      </div>
     </ul>
   </div>
-</header>
+</footer>
+ -->
+<footer class="footer">
+  <small>
+    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About",   about_path %></li>
+      <li><%= link_to "Contact", contact_path %></li>
+      <li><%= link_to "News", 'http://news.railstutorial.org/'%></li>
+    </ul>
+  </nav>
+</footer>
